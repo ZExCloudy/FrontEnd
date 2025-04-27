@@ -35,3 +35,14 @@ console.log(toBoolean);
 
 // * 1-> true 0 -> false
 // * "" -> false "any value" -> true
+
+let value = 33;
+let negValue = -value;
+console.log(typeof negValue);
+
+console.log(+"");
+console.log(+true);
+let counter = 100;
+console.log(++counter);
+console.log(counter++);
+console.log(counter);
