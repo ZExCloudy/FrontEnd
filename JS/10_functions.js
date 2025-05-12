@@ -23,3 +23,16 @@ let obj = {
   ages: 23,
 };
 objectFunction(obj); // name of user is Pratham and age is 23
+
+// * Ways of Function Declaration
+myFunction(); // Function Declaration
+function myFunction() {
+  console.log("Hello World");
+} // Function Declaration
+//myFunction2(); // Function Expression
+//! When functions are stored in variables  
+//! We canot invoke them before the declaration
+//! We can only invoke them after the declaration
+let myFunction2 = function () {
+  console.log("Hello World");
+};
