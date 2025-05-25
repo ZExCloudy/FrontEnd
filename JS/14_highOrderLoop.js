@@ -51,3 +51,13 @@ myArray.forEach(printMe); // passing function as a parameter
 myArray.forEach((value, index, array) => {
   console.log(value, index, array);
 });
+
+let objArray = [
+  { language: "Java", languageType: "OOP" },
+  { language: "JavaScript", languageType: "Client Side Scripting" },
+  { language: "Python", languageType: "General Purpose" },
+];
+
+objArray.forEach((item) => {
+  console.log(item.language + " is a " + item.languageType);
+});
