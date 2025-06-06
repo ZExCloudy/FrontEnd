@@ -18,7 +18,8 @@ let courses = [
   { name: "Java", price: 300 },
   { name: "C++", price: 400 },
 ];
-
+// reduce is used to reduce the array to a single value
+// It takes a callback function and an initial value as parameters
 let totalPrice = courses.reduce((acc, item) => item.price + acc, 0);
 
 console.log("Total Price of Courses: ", totalPrice);
