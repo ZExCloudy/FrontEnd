@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <style>
+      .bg-black {
+        background-color: black;
+        color: white;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <div>
+      <p class="heading" id="title">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum,
+        veritatis?
+      </p>
+      <h1>Learning DOM</h1>
+    </div>
+
+    <ul>
+      <li class="list-item">One</li>
+      <li class="list-item">Two</li>
+      <li class="list-item">Three</li>
+    </ul>
+  </body>
+  <script>
+    // CSS selectors
+    // . for class
+    // # for id 
+    // Using js to manipulate the objects
+    const title = document.getElementById("title");
+    title.style.color = "blue";
+    const numList = document.querySelectorAll(".list-item");
+    numList.forEach((element) => {
+      element.style.color = "green";
+      element.style.fontSize = "20px";
+    }); 
+  </script>
+</html>
